@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+</head>
+<heder>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#"><h3>Controle de Estoque</h3></a>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+</heder>
+<body>
+    <div class="container">
+        <h3 id="h3-h3">Cadastro de Produtos</h3>
+
+        <input id="field-id" name="field-id" type="hidden">
+
+        <div class="form-group row">
+            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="fornecedor" class="col-sm-2 col-form-label">Fornecedor</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="fornecedor" placeholder="Fornecedor">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="qt" class="col-sm-2 col-form-label">Quantidade</label>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="qt" placeholder="Quantidade">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="cat" class="col-sm-2 col-form-label">Categoria</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="cat" placeholder="Categoria">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="pre" class="col-sm-2 col-form-label">Preço</label>
+            <div class="col-sm-4">
+                <input type="number" class="form-control" id="pre" placeholder="Preço">
+            </div>
+        </div>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons" id="div-bts">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" onclick="mostrar()" autocomplete="off" checked> Mostrar
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" onclick="salvar()" autocomplete="off"> Salvar
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3" onclick="alterar()" autocomplete="off"> Alterar
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option4" onclick="deletar()" autocomplete="off"> Deletar
+            </label>
+        </div>
+    
+
+    <h3 id="alinha-h3"></h3>
+    <div id="new-table"></div>
+
+</div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+
